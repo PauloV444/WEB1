@@ -1,32 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Lore Ypsion</title>
+    <title>Sobre - Força Kira</title>
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Sobre a Lore Ypsion</h1>
+    <header>
+        <img src="imagens/miku.jpg" alt="Miku">
+        <div>
+            <h1>Sobre a Força Kira</h1>
+            <p class="subtitle">Tecnologia • Defesa • Estratégia</p>
+        </div>
+    </header>
 
-    <p>
-        A Lore Ypsion é uma empresa fictícia criada para apresentar
-        um projeto de desenvolvimento web.
-    </p>
+   <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <!-- Item com Drop-down -->
+            <li>
+                <a href="produtos.html">Catálogo ▾</a>
+                <ul class="dropdown">
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                </ul>
+            </li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <p>
-        Trabalhamos com criatividade, tecnologia e desenvolvimento
-        de novas ideias.
-    </p>
+    <div class="content-wrapper">
+        <main>
+            <section>
+                <h2>Nossa História e Missão</h2>
+                <p>A <strong>Força Kira</strong> é uma empresa privada especializada em tecnologia avançada, pesquisa e desenvolvimento de soluções estratégicas voltadas ao setor de defesa e segurança.</p>
+                <br>
+                <p>Fundada com o objetivo de inovar no campo tecnológico e tático, nossa missão é fornecer ferramentas de alto desempenho, garantindo eficiência, inovação e rigor operacional.</p>
+            </section>
+        </main>
 
-    <h2>Nossa missão</h2>
+        <aside>
+            <h2>Acesso Rápido</h2>
+            <ul>
+                <li><a href="sobre.html">Sobre a empresa</a></li>
+                <li><a href="produtos.html">Catálogo de produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Formulários</a></li>
+            </ul>
+        </aside>
+    </div>
 
-    <p>
-        Criar experiências simples, modernas e acessíveis para nossos
-        clientes e parceiros.
-    </p>
-
-    <a href="index.html">Voltar para o início</a>
+    <footer>
+        <a href="index.html" style="color: #4caf50; text-decoration: none;">Voltar para o início</a> &mdash; Força Kira &mdash; Projeto privado
+    </footer>
 
 </body>
+
 </html>

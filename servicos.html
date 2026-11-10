@@ -1,44 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços - Lore Ypsion</title>
+    <title>Serviços - Força Kira</title>
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Serviços</h1>
+    <header>
+        <img src="imagens/miku.jpg" alt="Miku">
+        <div>
+            <h1>Serviços - Força Kira</h1>
+            <p class="subtitle">Soluções tecnológicas e estratégicas para defesa e segurança.</p>
+        </div>
+    </header>
 
-    <p>
-        A Lore Ypsion oferece diferentes serviços relacionados
-        à tecnologia e produção digital.
-    </p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <!-- Item com Drop-down -->
+            <li>
+                <a href="produtos.html">Catálogo ▾</a>
+                <ul class="dropdown">
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                </ul>
+            </li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <h2>Desenvolvimento Web</h2>
+    <div class="content-wrapper">
+        <main>
+            <section class="services-list">
+                <div class="service-card">
+                    <h2>Pesquisa e Desenvolvimento</h2>
+                    <p>Desenvolvimento de novas tecnologias para defesa e segurança.</p>
+                </div>
 
-    <p>
-        Criação de páginas e sites utilizando tecnologias da web.
-    </p>
+                <div class="service-card">
+                    <h2>Inteligência Artificial</h2>
+                    <p>Pesquisa de sistemas inteligentes para automação e análise de dados.</p>
+                </div>
 
-    <h2>Design Digital</h2>
+                <div class="service-card">
+                    <h2>Veículos Tecnológicos</h2>
+                    <p>Desenvolvimento de veículos terrestres e aéreos.</p>
+                </div>
 
-    <p>
-        Criação de projetos visuais e materiais para ambientes digitais.
-    </p>
+                <div class="service-card">
+                    <h2>Segurança Digital</h2>
+                    <p>Soluções de proteção de sistemas e informações.</p>
+                </div>
 
-    <h2>Edição de Conteúdo</h2>
+                <div class="service-card">
+                    <h2>Consultoria</h2>
+                    <p>Consultoria tecnológica para projetos de defesa e segurança.</p>
+                </div>
 
-    <p>
-        Produção e edição de imagens, vídeos e outros conteúdos.
-    </p>
+                <div class="service-card service-image">
+                    <h2>Imagem Representativa</h2>
+                    <img src="imagens/baldi.jpg" alt="Baldi">
+                </div>
+            </section>
+        </main>
 
-    <br>
+        <aside>
+            <h2>Acesso Rápido</h2>
+            <ul>
+                <li><a href="sobre.html">Sobre a empresa</a></li>
+                <li><a href="produtos.html">Catálogo de produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Formulários</a></li>
+            </ul>
+        </aside>
+    </div>
 
-    <a href="produtos.html">Voltar para Produtos</a>
-
-    <br><br>
-
-    <a href="index.html">Voltar para o início</a>
+    <footer>
+        <a href="index.html" style="color: #4caf50; text-decoration: none;">Voltar para o início</a> &mdash; Força Kira
+    </footer>
 
 </body>
+
 </html>

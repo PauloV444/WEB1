@@ -1,46 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Lore Ypsion</title>
+    <title>Produtos - Força Kira</title>
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Produtos</h1>
+    <header>
+        <img src="imagens/miku.jpg" alt="Miku">
+        <div>
+            <h1>Catálogo de Produtos</h1>
+            <p class="subtitle">Produtos apresentados para fins de segurança armada.</p>
+        </div>
+    </header>
 
-    <p>
-        Conheça alguns dos produtos desenvolvidos pela Lore Ypsion.
-    </p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <!-- Item com Drop-down -->
+            <li>
+                <a href="produtos.html">Catálogo ▾</a>
+                <ul class="dropdown">
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                </ul>
+            </li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <h2>Produto Ypsion One</h2>
+    <div class="content-wrapper">
+        <main>
+            <section>
+                <h2>Produtos disponíveis</h2>
 
-    <p>
-        Uma solução fictícia criada para facilitar tarefas do dia a dia
-        através da tecnologia.
-    </p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Categoria</th>
+                                <th>Descrição</th>
+                                <th>Situação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-cell">
+                                    <img src="imagens/death-note.jpg" alt="Death Note">
+                                    <span>Death Note</span>
+                                </td>
+                                <td>Tecnologia sobrenatural</td>
+                                <td>Artefato mortal.</td>
+                                <td><span class="badge experimental">Experimental</span></td>
+                            </tr>
+                            <tr>
+                                <td class="product-cell">
+                                    <img src="imagens/skynet.jpg" alt="Skynet">
+                                    <span>Skynet Autoconsciente</span>
+                                </td>
+                                <td>Inteligência Artificial</td>
+                                <td>Sistema de inteligência artificial avançada.</td>
+                                <td><span class="badge experimental">Experimental</span></td>
+                            </tr>
+                            <tr>
+                                <td class="product-cell">
+                                    <img src="imagens/batmovel.jpg" alt="Batmóvel">
+                                    <span>Batmóvel</span>
+                                </td>
+                                <td>Veículo</td>
+                                <td>Veículo do Batman.</td>
+                                <td><span class="badge prototipo">Protótipo</span></td>
+                            </tr>
+                            <tr>
+                                <td class="product-cell">
+                                    <img src="imagens/f35.jpg" alt="Caça F-35">
+                                    <span>Caça F-35 Israelense</span>
+                                </td>
+                                <td>Aeronave militar</td>
+                                <td>Representação de uma aeronave militar.</td>
+                                <td><span class="badge catalogo">Catálogo</span></td>
+                            </tr>
+                            <tr>
+                                <td class="product-cell">
+                                    <img src="imagens/composto-v.jpg" alt="Composto V">
+                                    <span>Composto V</span>
+                                </td>
+                                <td>Biotecnologia</td>
+                                <td>Substância da Vought.</td>
+                                <td><span class="badge experimental">Experimental</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
 
-    <h2>Produto Ypsion Creative</h2>
+        <aside>
+            <h2>Acesso Rápido</h2>
+            <ul>
+                <li><a href="sobre.html">Sobre a empresa</a></li>
+                <li><a href="produtos.html">Catálogo de produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Formulários</a></li>
+            </ul>
+        </aside>
+    </div>
 
-    <p>
-        Ferramenta voltada para projetos criativos, edição e produção
-        de conteúdos digitais.
-    </p>
-
-    <h2>Produto Ypsion Max</h2>
-
-    <p>
-        Uma plataforma fictícia destinada a usuários que procuram
-        mais recursos e possibilidades.
-    </p>
-
-    <h2>Conheça nossos serviços</h2>
-
-    <a href="servicos.html">Ir para Serviços</a>
-
-    <br><br>
-
-    <a href="index.html">Voltar para o início</a>
+    <footer>
+        <p>
+            <a href="servicos.html" style="color: #4caf50; text-decoration: none;">Ver serviços</a>
+            <a href="index.html" style="color: #aaa; text-decoration: none;">Voltar para o início</a> &mdash; Força Kira
+        </p>
+    </footer>
 
 </body>
+
 </html>

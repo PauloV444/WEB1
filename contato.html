@@ -1,36 +1,192 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contate-nos - Lore Ypsion</title>
+    <title>Contato - Força Kira</title>
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Contate-nos</h1>
+    <header>
+        <img src="imagens/miku.jpg" alt="Miku">
+        <div>
+            <h1>Força Kira</h1>
+            <p class="subtitle">O poder está em suas mãos.</p>
+        </div>
+    </header>
 
-    <p>
-        Entre em contato com a equipe Lore Ypsion.
-    </p>
+   <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <!-- Item com Drop-down -->
+            <li>
+                <a href="produtos.html">Catálogo ▾</a>
+                <ul class="dropdown">
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                </ul>
+            </li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <h2>Informações de contato</h2>
+    <div class="content-wrapper">
+        <main>
+            <section>
+                <h2>Central de Atendimento</h2>
+                <p>Entre em contato, faça seu cadastro, envie pedidos e compartilhe sua avaliação.</p>
+            </section>
 
-    <p>Email: contato@loreypsion.com</p>
+            <section id="contato" class="form-section">
+                <h2>1. Formulário de Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome-contato">Nome completo</label>
+                        <input type="text" id="nome-contato" name="nome" required>
+                    </div>
 
-    <p>Telefone: (85) 99999-0000</p>
+                    <div class="form-group">
+                        <label for="email-contato">E-mail</label>
+                        <input type="email" id="email-contato" name="email" required>
+                    </div>
 
-    <p>Fortaleza - Ceará</p>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
 
-    <h2>Atendimento</h2>
+                    <button type="submit" class="btn-submit">Enviar mensagem</button>
+                </form>
+            </section>
 
-    <p>
-        Nosso atendimento fictício funciona de segunda a sexta,
-        das 8h às 18h.
-    </p>
+            <section id="cadastro" class="form-section">
+                <h2>2. Formulário de Cadastro</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome-cadastro">Nome completo</label>
+                        <input type="text" id="nome-cadastro" name="nome" required>
+                    </div>
 
-    <br>
+                    <div class="form-group">
+                        <label for="email-cadastro">E-mail</label>
+                        <input type="email" id="email-cadastro" name="email" required>
+                    </div>
 
-    <a href="index.html">Voltar para o início</a>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="data">Data de nascimento</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+
+                    <button type="submit" class="btn-submit">Cadastrar</button>
+                </form>
+            </section>
+
+            <section id="pedido" class="form-section">
+                <h2>3. Formulário de Pedido</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome-pedido">Nome</label>
+                        <input type="text" id="nome-pedido" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="produto">Produto</label>
+                        <select id="produto" name="produto">
+                            <option value="death-note">Death Note</option>
+                            <option value="skynet">Skynet Autoconsciente</option>
+                            <option value="batmovel">Batmóvel</option>
+                            <option value="f35">Caça F-35 Israelense</option>
+                            <option value="composto-v">Composto V</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" id="quantidade" name="quantidade" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="observacao">Observações</label>
+                        <textarea id="observacao" name="observacao" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar pedido</button>
+                </form>
+            </section>
+
+            <section id="avaliacao" class="form-section">
+                <h2>4. Formulário de Avaliação</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome-avaliacao">Nome</label>
+                        <input type="text" id="nome-avaliacao" name="nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nota">Nota</label>
+                        <select id="nota" name="nota">
+                            <option value="5">5 - Excelente</option>
+                            <option value="4">4 - Muito bom</option>
+                            <option value="3">3 - Bom</option>
+                            <option value="2">2 - Regular</option>
+                            <option value="1">1 - Ruim</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentario">Comentário</label>
+                        <textarea id="comentario" name="comentario" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar avaliação</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Galeria de Imagens</h2>
+            
+            <div class="aside-gallery">
+                <h3>Imagem 1</h3>
+                <img src="imagens/elmano.jpg" alt="Elmano">
+
+                <h3>Imagem 2</h3>
+                <img src="imagens/elmano2.jpg" alt="Elmano 2">
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #333; margin: 15px 0;">
+
+            <h2>Sobre</h2>
+            <p>Bem-vindo à página de contato da Força Kira.</p>
+            
+            <br>
+            <h2>Acesso Rápido</h2>
+            <ul>
+                <li><a href="sobre.html">Sobre a empresa</a></li>
+                <li><a href="produtos.html">Catálogo de produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="contato.html">Formulários</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <a href="index.html" style="color: #4caf50; text-decoration: none;">Voltar para o início</a> &mdash; &copy; 2026 Força Kira - Todos os direitos reservados.
+    </footer>
 
 </body>
+
 </html>

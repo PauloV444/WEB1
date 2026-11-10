@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Força Kira</title>
-</head>
-<body style="font-family: system-ui, sans-serif; background: #111; color: #eee; max-width: 600px; margin: 0 auto; padding: 20px; line-height: 1.5;">
+    <title>Força Kira - Início</title>
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="style.css">
 
-    <header style="text-align: center; margin-bottom: 30px;">
-        <img src="imagens/miku.jpg" alt="Miku" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
-        <h1 style="font-size: 1.4rem; margin-top: 10px;">Força Kira</h1>
-        <p style="font-size: 0.85rem; color: #aaa; margin: 0;">Tecnologia • Defesa • Estratégia</p>
+    <!-- CSS Incorporado (Interno) -->
+    <style>
+        .link-destaque-verde {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        .link-destaque-cinza {
+            color: #aaa;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/miku.jpg" alt="Miku">
+        <div>
+            <h1>Força Kira</h1>
+            <p class="subtitle">Tecnologia • Defesa • Estratégia</p>
+        </div>
     </header>
 
-    <main>
-        <section style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
-            <h2 style="font-size: 1rem; margin-bottom: 8px; color: #4caf50; margin-top: 0;">Tecnologia Militar e Defesa</h2>
-            <p style="font-size: 0.9rem; color: #ccc; margin: 0;">Empresa especializada em tecnologia, pesquisa e desenvolvimento de soluções voltadas ao setor militar.</p>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <!-- Item com Drop-down -->
+            <li>
+                <a href="produtos.html">Catálogo ▾</a>
+                <ul class="dropdown">
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                </ul>
+            </li>
+            <li><a href="parceiros.html">Parceiros</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
-        <section style="background: #1a1a1a; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
-            <h2 style="font-size: 1rem; margin-bottom: 8px; color: #4caf50; margin-top: 0;">Acesso Rápido</h2>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-                <li style="margin-bottom: 8px;"><a href="sobre.html" style="display: block; background: #222; color: #fff; padding: 10px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Sobre a empresa</a></li>
-                <li style="margin-bottom: 8px;"><a href="produtos.html" style="display: block; background: #222; color: #fff; padding: 10px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Catálogo de produtos</a></li>
-                <li style="margin-bottom: 8px;"><a href="servicos.html" style="display: block; background: #222; color: #fff; padding: 10px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Serviços</a></li>
-                <li style="margin-bottom: 8px;"><a href="parceiros.html" style="display: block; background: #222; color: #fff; padding: 10px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Parceiros</a></li>
-                <li style="margin-bottom: 8px;"><a href="portfolio.html" style="display: block; background: #222; color: #fff; padding: 10px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Portfólio</a></li>
-                <li style="margin-bottom: 8px;"><a href="contato.html" style="display: block; background: #222; color: #fff; padding: 10px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">Formulários</a></li>
+    <div class="content-wrapper">
+        <main>
+            <section>
+                <h2>Tecnologia Militar e Defesa</h2>
+                <p>Empresa especializada em tecnologia, pesquisa e desenvolvimento de soluções voltadas ao setor militar.</p>
+            </section>
+
+            <!-- Galeria Interativa de 7 Imagens -->
+            <section class="gallery-section">
+                <h2>Galeria Interativa</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="imagens/elmano.jpg" alt="Projeto 1">
+                        <div class="gallery-caption">Projeto 1</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagens/elmano2.jpg" alt="Projeto 2">
+                        <div class="gallery-caption">Projeto 2</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagens/miku.jpg" alt="Projeto 3">
+                        <div class="gallery-caption">Projeto 3</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagens/baldi.jpg" alt="Projeto 4">
+                        <div class="gallery-caption">Projeto 4</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagens/bolsonaro.jpg" alt="Projeto 5">
+                        <div class="gallery-caption">Projeto 5</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagens/skynet.jpg" alt="Projeto 6">
+                        <div class="gallery-caption">Projeto 6</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagens/batmovel.jpg" alt="Projeto 7">
+                        <div class="gallery-caption">Projeto 7</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Acesso Rápido</h2>
+            <ul>
+                <li><a href="sobre.html">Sobre a empresa</a></li>
+                <li><a href="produtos.html" class="link-destaque-verde">Catálogo de produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html" class="link-destaque-cinza">Formulários</a></li>
             </ul>
-        </section>
-    </main>
+        </aside>
+    </div>
 
-    <footer style="text-align: center; font-size: 0.8rem; color: #666; margin-top: 30px;">
-        Força Kira _ Projeto Militar Privado
+    <footer>
+        Força Kira &mdash; Projeto privado
     </footer>
 
 </body>
+
 </html>

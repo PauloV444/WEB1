@@ -1,0 +1,5 @@
+import random
+
+numeros = [random.randint(1, 100) for _ in range(10)]
+print(f"Números gerados: {numeros}")
+print(f"O maior número foi: {max(numeros)}")
